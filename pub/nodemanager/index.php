@@ -168,7 +168,7 @@ $lines = array();
 $currentLine = '';
 while(-1 !== fseek($log,$pos,SEEK_END)) {
   $char = fgetc($log);
-  if (PHP_EOL == $char) {
+  if ("\n" == $char) {
     $lines[] = $currentLine;
     $currentLine = '';
   }
@@ -179,6 +179,7 @@ while(-1 !== fseek($log,$pos,SEEK_END)) {
 }
 
 //$lines[] = $currentLine;
+
 
 foreach($lines as $x) {
   echo $x . "<br>";
