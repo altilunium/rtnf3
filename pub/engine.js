@@ -405,7 +405,8 @@ if (thisPageURL.includes("?action=edit")) {
 	nodeSourceCode = document.querySelector("#text").value;
 	var intervalID = setInterval(saveChanges,180000)
 	window.onbeforeunload = function(){
-		syncSaveChanges();
+		//syncSaveChanges();
+		saveChanges();
 		return null;
 	}	
 }
@@ -618,9 +619,9 @@ if(textarea){
 		var ergoNumber = caretCoord.top - window.scrollY;
 		//console.log('Ergo Number = %s', ergoNumber);
 
-		if (ergoNumber >= 250) {
+		if (ergoNumber >= 300) {
 			//console.log("Bad ergonomy! %s",ergoNumber);
-			window.scrollBy(0,125);	
+			window.scrollBy(0,100);	
 		}
 		
 
