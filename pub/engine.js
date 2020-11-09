@@ -58,6 +58,7 @@ function getCaretCoordinates(element, position, options) {
   }
 
   var debug = options && options.debug || false;
+  debug = false;
   if (debug) {
     var el = document.querySelector('#input-textarea-caret-position-mirror-div');
     if (el) el.parentNode.removeChild(el);
@@ -405,8 +406,8 @@ if (thisPageURL.includes("?action=edit")) {
 	nodeSourceCode = document.querySelector("#text").value;
 	var intervalID = setInterval(saveChanges,180000)
 	window.onbeforeunload = function(){
-		//syncSaveChanges();
-		saveChanges();
+		syncSaveChanges();
+		//saveChanges();
 		return null;
 	}	
 }
