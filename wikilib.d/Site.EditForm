@@ -1,10 +1,25 @@
-version=pmwiki-2.2.30 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (X11; Linux x86_64; rv:5.0) Gecko/20100101 Firefox/5.0
-author=Petko
+version=pmwiki-2.2.110 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Linux x86_64; rv:83.0) Gecko/20100101 Firefox/83.0
+author=
 charset=UTF-8
 csum=
+host=127.0.0.1
 name=Site.EditForm
-rev=61
+rev=67
 targets=
-text=(:Summary:contains the edit page layout form:)%0a!! $[Editing {*$FullName}] %25block class=wikiaction%25%0a(:messages:)%0a(:div id='wikiedit':)%0a(:input e_form:)[[#top]](:e_guibuttons:)\\%0a(:input e_textarea:)\\%0a$[Summary]: (:input e_changesummary:)\\%0a$[Author]: (:input e_author:) (:input e_minorcheckbox:) $[This is a minor edit]\\%0a(:input e_savebutton:) (:input e_savedraftbutton:) (:input e_saveeditbutton:) (:input e_previewbutton:) (:input e_cancelbutton:)%0a(:input end:)%0a(:divend:)%0a(:include $[{$SiteGroup}/EditQuickReference]:)%0a(:if e_preview:)%0a!! $[Preview {*$FullName}]%0a'''$[Page is unsaved]'''%0a(:e_preview:)%0a----%0a'''$[End of preview -- remember to save]'''\\%0a[[#top | $[Top] ]]%0a(:ifend:)%0a
-time=1316300652
+text=(:Summary:contains the edit page layout form:)%0a!! $[Editing {*$FullName}] %25block class=wikiaction%25%0a(:messages:)%0a(:div id='wikiedit':)%0a(:input e_form:)[[#top]](:e_guibuttons:)\\%0a(:input e_textarea:)\\%0a(:input e_savebutton:) (:input e_savedraftbutton:) (:input e_saveeditbutton:) %0a(:input end:)%0a(:divend:)%0a(:include $[{$SiteGroup}/EditQuickReference]:)%0a(:if e_preview:)%0a!! $[Preview {*$FullName}]%0a'''$[Page is unsaved]'''%0a(:e_preview:)%0a----%0a'''$[End of preview -- remember to save]'''\\%0a[[#top | $[Top] ]]%0a(:ifend:)%0a
+time=1607405759
+author:1607405759=
+diff:1607405759:1607405758:=
+host:1607405759=127.0.0.1
+author:1607405758=
+diff:1607405758:1607405169:=
+host:1607405758=127.0.0.1
+author:1607405169=
+diff:1607405169:1607405142:=7c7%0a%3c (:input e_savebutton:) (:input e_savedraftbutton:) (:input e_saveeditbutton:) %0a---%0a> (:input e_savebutton:) (:input e_savedraftbutton:) (:input e_saveeditbutton:) (:input e_previewbutton:) (:input e_cancelbutton:)%0a
+diff:1607405169:1607405169:=
+host:1607405169=127.0.0.1
+author:1607405142=
+diff:1607405142:1316300652:=6a7,8%0a> $[Summary]: (:input e_changesummary:)\\%0a> $[Author]: (:input e_author:) (:input e_minorcheckbox:) $[This is a minor edit]\\%0a
+diff:1607405142:1607405142:=
+host:1607405142=127.0.0.1
