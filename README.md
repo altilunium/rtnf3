@@ -1,4 +1,4 @@
-## How to Install
+## Linux Installation
 Install httpd and php, then :
 
 ```
@@ -13,3 +13,11 @@ AllowOverride All
 </Directory>
 ```
 Inside `<VirtualHost>` tag
+
+##Windows Installation
+httpd/conf/httpd.conf 
+```
+<Directory /var/www/>
+AllowOverride All
+</Directory>
+```
