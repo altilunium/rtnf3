@@ -14,7 +14,7 @@ AllowOverride All
 ```
 Inside `<VirtualHost>` tag
 
-##Windows Installation
+## Windows Installation
 httpd/conf/httpd.conf 
 ```
 <Directory /var/www/>
